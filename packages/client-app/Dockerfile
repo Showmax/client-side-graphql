@@ -1,4 +1,7 @@
-FROM node:8.4-alpine
+FROM node:8-alpine
+
+# install npm@5.5.1
+RUN yarn global add npm@5.5.1
 
 # create app directory
 WORKDIR /usr/src/app
