@@ -2,6 +2,7 @@
   "name": "@showmax/graphql-example-rest-backend",
   "version": "1.0.2",
   "description": "",
+  "private": true,
   "main": "index.js",
   "publishConfig": {
     "access": "public"
