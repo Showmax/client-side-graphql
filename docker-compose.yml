@@ -1,10 +1,10 @@
 version: "3"
 services:
   rest-backend:
-    image: wizardzloy/client-side-graphql-rest-backend
+    image: graphql-example-rest-backend
     ports:
       - "3000:3000"
   client-app:
-    image: wizardzloy/client-side-graphql-client-app
+    image: graphql-example-client-app
     ports:
       - "5000:5000"

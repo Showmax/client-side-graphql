@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { ApolloClient, ApolloProvider } from 'react-apollo';
-import { schema, createLoaders, graphql, print } from '@wizardzloy/graphql-schema';
+import { schema, createLoaders, graphql, print } from '@showmax/graphql-example-schema';
 
 import App from './components/App';
 

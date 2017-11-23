@@ -1,5 +1,5 @@
 {
-  "name": "client-side-graphql",
+  "name": "@showmax/client-side-graphql",
   "version": "1.0.0",
   "description": "Example setup of a client-side GraphQL schema that uses an existing REST backend",
   "engines": {
@@ -18,8 +18,9 @@
     "apollo",
     "react"
   ],
-  "author": "Vladimir Guguiev <wizardzloy@gmail.com>",
-  "license": "ISC",
+  "author": "Showmax Frontend <frontend@showmax.com>",
+  "license": "Apache-2.0",
+  "private": true,
   "devDependencies": {
     "lerna": "^2.0.0"
   }

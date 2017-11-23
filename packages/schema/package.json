@@ -1,5 +1,5 @@
 {
-  "name": "@wizardzloy/graphql-schema",
+  "name": "@showmax/graphql-example-schema",
   "version": "1.0.4",
   "description": "",
   "main": "dist/index.js",
@@ -10,8 +10,8 @@
     "start": "nodemon server.js",
     "build": "babel src -d dist",
     "build:watch": "babel src -d dist -w",
-    "docker:build": "docker build -t wizardzloy/client-side-graphql-graphql-schema .",
-    "docker:run": "docker run -p 4000:4000 wizardzloy/client-side-graphql-graphql-schema",
+    "docker:build": "docker build -t graphql-example-schema .",
+    "docker:run": "docker run -p 4000:4000 graphql-example-schema",
     "flow": "flow",
     "prepublish": "rm -rf ./dist && npm run build"
   },

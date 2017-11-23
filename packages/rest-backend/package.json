@@ -1,5 +1,5 @@
 {
-  "name": "@wizardzloy/rest-backend",
+  "name": "@showmax/graphql-example-rest-backend",
   "version": "1.0.2",
   "description": "",
   "main": "index.js",
@@ -8,8 +8,8 @@
   },
   "scripts": {
     "start": "node index.js",
-    "docker:build": "docker build -t wizardzloy/client-side-graphql-rest-backend .",
-    "docker:run": "docker run -p 3000:3000 wizardzloy/client-side-graphql-rest-backend"
+    "docker:build": "docker build -t graphql-example-rest-backend .",
+    "docker:run": "docker run -p 3000:3000 graphql-example-rest-backend"
   },
   "keywords": [],
   "author": "Vladimir Guguiev <wizardzloy@gmail.com>",
