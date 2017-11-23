@@ -1,7 +1,8 @@
 Client-Side GraphQL Example
 ==================================
 
-Example setup of a client-side GraphQL schema that uses an existing REST backend
+Example setup of a client-side GraphQL schema that uses an existing REST backend.
+The project illustrates the ideas covered in [this talk](https://slideslive.com/38902538/implementing-graphql-without-a-backend)
 
 ## Run
 
