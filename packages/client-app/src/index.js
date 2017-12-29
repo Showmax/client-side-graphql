@@ -1,28 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { ApolloClient, ApolloProvider } from 'react-apollo';
-import { schema, createLoaders, graphql, print } from '@showmax/graphql-example-schema';
+import { SchemaLink } from 'apollo-link-schema';
+import { ApolloClient } from 'apollo-client';
+import { InMemoryCache } from 'apollo-cache-inmemory';
+import { ApolloProvider } from 'react-apollo';
+import { schema, createLoaders } from '@showmax/graphql-example-schema';
 
 import App from './components/App';
 
-const networkInterface = {
-  query: (graphqlRequest) => {
-    return graphql(
-      schema,
-      print(graphqlRequest.query),
-      null,
-      {
-        loaders: createLoaders(),
-      },
-      graphqlRequest.variables,
-      graphqlRequest.operationName,
-    );
-  },
-};
-const client = new ApolloClient({ networkInterface });
+
+const client = new ApolloClient({
+  link: new SchemaLink({
+    schema: schema,
+    context: {
+      loaders: createLoaders(),
+    },
+  }),
+  cache: new InMemoryCache(),
+});
 
 ReactDOM.render(
-  <ApolloProvider client={client} >
+  <ApolloProvider client={client}>
     <App />
   </ApolloProvider>,
   document.getElementById('app')

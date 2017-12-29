@@ -1,6 +1,7 @@
 import React from 'react';
 import injectSheet from 'react-jss';
-import { gql, graphql } from 'react-apollo';
+import { graphql } from 'react-apollo';
+import gql from 'graphql-tag';
 import Poster from '../Poster';
 
 
